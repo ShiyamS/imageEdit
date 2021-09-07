@@ -32,8 +32,8 @@ input {
   width: 100px;
 }
 
-a {
-  background: #333;
+.refresh-btn {
+  background: var(--base);
   color: #fff;
   border: none;
   text-decoration: none;
