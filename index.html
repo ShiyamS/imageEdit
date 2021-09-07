@@ -19,6 +19,8 @@
 
     <label for="base">Base Color</label>
     <input id="base" type="color" name="base" value="#ffc600">
+
+    <a onclick="reloadPage()" href="#">Reload Image</a>
   </div>
 
   <img src="https://picsum.photos/500/500?random=1">
@@ -29,6 +31,10 @@
       const suffix = this.dataset.sizing || "";
 
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    function reloadPage() {
+      location.reload();
     }
 
     input.forEach(input => input.addEventListener('change', handelChange));
